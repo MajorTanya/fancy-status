@@ -1,0 +1,66 @@
+{
+    "name": "@major-tanya/fancy-status",
+    "version": "0.1.0",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "description": "A convenient wrapper library to return certain status code responses",
+    "scripts": {
+        "lint": "eslint src",
+        "format": "prettier src --write src",
+        "prebuild": "rimraf dist && mkdir dist",
+        "build": "rollup -c -m",
+        "test": "vitest --coverage --reporter verbose",
+        "test:once": "vitest run",
+        "coverage": "vitest run --coverage",
+        "prerelease": "npm run build && npm run test:once",
+        "release:patch": "npm version patch --sign-git-tag=true",
+        "release:minor": "npm version minor --sign-git-tag=true",
+        "release:major": "npm version major --sign-git-tag=true",
+        "prepare": "husky"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MajorTanya/fancy-status.git"
+    },
+    "keywords": [],
+    "author": "MajorTanya <github@majortanya.eu>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MajorTanya/fancy-status/issues"
+    },
+    "homepage": "https://github.com/MajorTanya/fancy-status#readme",
+    "devDependencies": {
+        "@rollup/plugin-terser": "^0.4.4",
+        "@rollup/plugin-typescript": "^11.1.6",
+        "@types/node": "^20.11.28",
+        "@vercel/ncc": "^0.38.1",
+        "@vitest/coverage-v8": "^1.4.0",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "fs-extra": "^11.2.0",
+        "globby": "^14.0.1",
+        "husky": "^9.0.11",
+        "is-ci": "^3.0.1",
+        "prettier": "^3.2.5",
+        "rimraf": "^5.0.5",
+        "rollup": "^4.13.0",
+        "rollup-plugin-bundle-size": "^1.0.3",
+        "rollup-plugin-copy": "^3.5.0",
+        "tslib": "^2.6.2",
+        "typescript": "^5.4.2",
+        "typescript-eslint": "^7.2.0",
+        "vitest": "^1.4.0"
+    },
+    "type": "module",
+    "files": [
+        "dist/**/*"
+    ],
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs",
+            "types": "./dist/index.d.ts"
+        }
+    }
+}
