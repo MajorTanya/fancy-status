@@ -17,7 +17,7 @@
         "release:patch": "npm version patch --sign-git-tag=true",
         "release:minor": "npm version minor --sign-git-tag=true",
         "release:major": "npm version major --sign-git-tag=true",
-        "prepare": "husky"
+        "prepare": "is-ci || husky"
     },
     "repository": {
         "type": "git",
