@@ -32,7 +32,7 @@ pkg.exports = files.reduce((acc, file) => {
 }, {})
 
 // write updated package.json
-await fs.writeJSON('./package.json', pkg, { spaces: 4 })
+await fs.writeJSON('./package.json', pkg, { spaces: 4, EOL: '\r\n' })
 
 export default async () => {
   console.log(files.map(f => f.path))
