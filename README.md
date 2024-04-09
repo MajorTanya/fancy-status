@@ -4,7 +4,7 @@
 ![Lint Status](https://img.shields.io/github/actions/workflow/status/MajorTanya/fancy-status/lint.yml?label=lint)
 ![Test Status](https://img.shields.io/github/actions/workflow/status/MajorTanya/fancy-status/testing.yml?label=tests)
 ![GitHub issues](https://img.shields.io/github/issues/MajorTanya/fancy-status)
-![Package version](https://img.shields.io/github/package-json/version/MajorTanya/fancy-status)
+[![Package version](https://img.shields.io/npm/v/@major-tanya/fancy-status)](https://www.npmjs.com/package/@major-tanya/fancy-status)
 
 A convenient wrapper library to return certain status code responses. Zero dependencies, zero complexity.
 
