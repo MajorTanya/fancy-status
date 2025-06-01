@@ -1,15 +1,11 @@
-export {
-  created,
-  noContent,
-  ok,
-} from './2xx-success/index.js'
+export { created, noContent, ok } from './2xx-success/index.js';
 
 export {
   found,
   movedPermanently,
   permanentRedirect,
   temporaryRedirect,
-} from './3xx-redirection/index.js'
+} from './3xx-redirection/index.js';
 
 export {
   badRequest,
@@ -18,8 +14,6 @@ export {
   imATeapot,
   notFound,
   unauthorized,
-} from './4xx-clientError/index.js'
+} from './4xx-clientError/index.js';
 
-export {
-  internalServerError,
-} from './5xx-serverError/index.js'
+export { internalServerError } from './5xx-serverError/index.js';

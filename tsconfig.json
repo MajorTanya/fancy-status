@@ -1,31 +1,32 @@
 {
-    "compilerOptions": {
-        "allowJs": true,
-        "allowSyntheticDefaultImports": true,
-        "baseUrl": "src",
-        "declaration": true,
-        "esModuleInterop": true,
-        "inlineSourceMap": false,
-        "listEmittedFiles": false,
-        "listFiles": false,
-        "pretty": true,
-        "rootDir": "src",
-        "strict": true,
-        "sourceMap": true,
-        "module": "ESNext",
-        "moduleResolution": "Bundler",
-        "outDir": "dist",
-        "target": "ESNext",
-        "types": [
-            "@types/node"
-        ]
-    },
-    "exclude": [
-        "node_modules",
-        "dist",
-        "**/*.spec.ts"
-    ],
-    "include": [
-        "src"
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "declaration": true,
+    "esModuleInterop": true,
+    "inlineSourceMap": false,
+    "listEmittedFiles": false,
+    "listFiles": false,
+    "pretty": true,
+    "rootDir": "",
+    "strict": true,
+    "sourceMap": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "outDir": "out",
+    "target": "ESNext",
+    "types": [
+      "@types/node"
     ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "out"
+  ],
+  "include": [
+    "src",
+    "test"
+  ]
 }

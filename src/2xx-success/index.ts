@@ -1,4 +1,4 @@
-import { status } from '../util/util.js'
+import { status } from '../util/util.js';
 
 /**
  * Standard response code for successful HTTP requests.
@@ -6,7 +6,8 @@ import { status } from '../util/util.js'
  * Code: 200
  * Status text: OK
  */
-export const ok = (body?: BodyInit, options?: ResponseInit) => status(200, 'OK', body, options)
+export const ok = (body?: BodyInit, options?: ResponseInit) =>
+  status(200, 'OK', body, options);
 
 /**
  * Response code for successful resource creation
@@ -14,7 +15,8 @@ export const ok = (body?: BodyInit, options?: ResponseInit) => status(200, 'OK',
  * Code: 201
  * Status text: Created
  */
-export const created = (body?: BodyInit, options?: ResponseInit) => status(201, 'Created', body, options)
+export const created = (body?: BodyInit, options?: ResponseInit) =>
+  status(201, 'Created', body, options);
 
 /**
  * Response code for successful responses with no content to return
@@ -22,6 +24,5 @@ export const created = (body?: BodyInit, options?: ResponseInit) => status(201, 
  * Code: 204
  * Status text: No Content
  */
-export const noContent = (options?: ResponseInit) => status(204, 'No Content', undefined, options)
-
-
+export const noContent = (options?: ResponseInit) =>
+  status(204, 'No Content', undefined, options);
