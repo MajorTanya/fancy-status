@@ -65,5 +65,10 @@
       "require": "./dist/index.cjs",
       "types": "./dist/index.d.ts"
     }
+  },
+  "overrides": {
+    "rollup-plugin-copy": {
+      "globby": "^11.1.0"
+    }
   }
 }
