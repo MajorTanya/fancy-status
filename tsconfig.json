@@ -1,15 +1,11 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": "src",
     "declaration": true,
-    "esModuleInterop": true,
     "inlineSourceMap": false,
     "listEmittedFiles": false,
     "listFiles": false,
     "pretty": true,
-    "rootDir": "",
     "strict": true,
     "sourceMap": true,
     "module": "ESNext",
